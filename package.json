@@ -1,5 +1,5 @@
 {
-  "homepage":"https://singh8700.github.io/weatherApps"
+  "homepage":"https://singh8700.github.io/weatherApps",
   "name": "wheaterapp",
   "private": true,
   "version": "0.0.0",
@@ -8,6 +8,8 @@
     "dev": "vite",
     "start": "vite",
     "build": "tsc && vite build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
